@@ -1,0 +1,53 @@
+{
+  "implementation": "dfsp-directory",
+  "repl": false,
+  "console": {
+    "port": 30011,
+    "server": {
+      "host": "0.0.0.0",
+      "port": 30011
+    }
+  },
+  "stdOut": false,
+  "log": {
+    "streams": [
+      {
+        "level": "debug",
+        "stream": "ut-log-dfsp",
+        "streamConfig": {
+          "skip": [],
+          "metrics": {}
+        }
+      },
+      {
+        "level": "trace",
+        "stream": "../logRotateStream",
+        "streamConfig": {
+          "path": "ut5_%Y-%m-%d.log",
+          "symlink": "ut5.log",
+          "compress": true
+        }
+      }
+    ]
+  },
+  "masterBus": {
+    "logLevel": "debug",
+    "socket": "dfsp-directory"
+  },
+  "workerBus": {
+    "logLevel": "debug"
+  },
+  "db": {
+    "logLevel": "trace",
+    "db": {
+      "host": "postgres"
+    },
+    "permission": {
+      "requireSession": true
+    }
+  },
+  "script": {
+    "#mock": true
+  },
+  "debug": true
+}

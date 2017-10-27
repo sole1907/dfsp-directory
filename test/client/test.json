@@ -1,0 +1,29 @@
+{
+    "implementation": "directory",
+    "repl": false,
+    "console": false,
+    "log": false,
+    "debug": true,
+    "masterBus": {
+        "logLevel": "error",
+        "socket": false
+    },
+    "workerBus": {
+        "logLevel": "error"
+    },
+    "jsonrpc": {
+        "logLevel": "error",
+        "uri": "/rpc",
+        "url": "http://127.0.0.1:8011",
+        "namespace": ["directory"],
+        "method": "post"
+    },
+    "performance": {
+        "id": "dfsp-directory",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        },
+    "test": true
+    }
+}

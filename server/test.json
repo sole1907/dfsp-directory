@@ -1,0 +1,34 @@
+{
+  "implementation": "dfsp-directory",
+  "repl": false,
+  "console": false,
+  "log": false,
+  "debug": true,
+  "workDir": "./tmp",
+  "masterBus": {
+    "logLevel": "error",
+    "socket": "dfsp-directory"
+  },
+  "workerBus": {
+    "logLevel": "error"
+  },
+  "#performance": {
+    "id": "dfsp-directory",
+    "influx": {
+      "host": "influxdb",
+      "port": 4444
+    }
+  },
+  "#script": {
+    "mock": true
+  },
+  "db": {
+    "logLevel": "trace",
+    "db": {
+      "host": "postgres"
+    },
+    "permission": {
+      "requireSession": true
+    }
+  }
+}

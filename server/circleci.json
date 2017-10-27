@@ -1,0 +1,29 @@
+{
+  "implementation": "dfsp-directory",
+  "repl": false,
+  "console": false,
+  "log": false,
+  "debug": true,
+  "workDir": "./tmp",
+  "masterBus": {
+    "logLevel": "error",
+    "socket": "dfsp-directory"
+  },
+  "workerBus": {
+    "logLevel": "error"
+  },
+  "performance": false,
+  "script": {
+    "mock": true
+  },
+  "db": {
+    "logLevel": "trace",
+    "db": {
+      "host": "localhost",
+      "database": "circle_test"
+    },
+    "permission": {
+      "requireSession": true
+    }
+  }
+}
