@@ -1,5 +1,5 @@
 {
-  "name": "@leveloneproject/dfsp-directory",
+  "name": "@mojaloop/dfsp-directory",
   "version": "0.7.27",
   "description": "DFSP directory service",
   "main": "index.js",
@@ -55,7 +55,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:LevelOneProject/dfsp-directory.git"
+    "url": "git@github.com:mojaloop/dfsp-directory.git"
   },
   "engines": {
     "node": ">=4.4.7",
