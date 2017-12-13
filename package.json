@@ -1,6 +1,6 @@
 {
   "name": "@mojaloop/dfsp-directory",
-  "version": "0.7.27",
+  "version": "0.7.30",
   "description": "DFSP directory service",
   "main": "index.js",
   "scripts": {
@@ -33,17 +33,18 @@
   },
   "dependencies": {
     "joi": "9.1.1",
-    "ut-bus": "^5.12.1",
+    "pm2": "2.0.18",
+    "ut-bus": "^5.18.0",
     "ut-error": "^5.4.2",
+    "ut-log": "^5.11.0",
+    "ut-log-dfsp": "^5.0.1",
     "ut-port-console": "~6.2.13",
     "ut-port-http": "^6.4.1",
     "ut-port-httpserver": "~8.11.4",
-    "ut-port-script": "^5.5.1",
+    "ut-port-performance": "^5.9.0",
     "ut-port-postgres": "^5.7.7",
-    "ut-port-performance": "^5.4.7",
-    "ut-run": "^8.1.0",
-    "pm2": "2.0.18",
-    "ut-log-dfsp": "^5.0.1"
+    "ut-port-script": "^5.5.1",
+    "ut-run": "^8.1.0"
   },
   "devDependencies": {
     "blue-tape": "1.0.0",
@@ -60,9 +61,6 @@
   "engines": {
     "node": ">=4.4.7",
     "npm": ">=3.10.6"
-  },
-  "publishConfig": {
-    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
   },
   "author": "Kalin Krustev <kalin.krustev@softwaregroup-bg.com>",
   "license": "Apache-2.0"
